@@ -7,6 +7,8 @@ import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
 import org.telegram.telegrambots.updatesreceivers.DefaultBotSession;
 
 import net.sniaper.BotWorker.bot.ExchangeRatesBot;
+import okhttp3.OkHttp;
+import okhttp3.OkHttpClient;
 
 @Configuration
 public class BotConfig {
@@ -16,5 +18,10 @@ public class BotConfig {
 		var api = new TelegramBotsApi(DefaultBotSession.class);
 		api.registerBot(ExBot);
 		return api;
+	}
+	
+	@Bean
+	public OkHttpClient okHttplient() {
+		return new OkHttpClient();
 	}
 }
