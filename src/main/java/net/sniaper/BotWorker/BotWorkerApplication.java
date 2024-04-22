@@ -8,7 +8,5 @@ public class BotWorkerApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(BotWorkerApplication.class, args);
-		
-		
 	}
 }
