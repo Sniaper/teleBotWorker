@@ -1,10 +1,10 @@
-package net.sniaper.BotWorker;
+package ru.akutepov.exchangeratesbot;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class BotWorkerApplicationTests {
+class ExchangeRatesBotApplicationTests {
 
 	@Test
 	void contextLoads() {
